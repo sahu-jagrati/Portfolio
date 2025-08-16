@@ -1,0 +1,327 @@
+/* Global Styles */
+body {
+  background: linear-gradient(180deg, #0D1E4C, #26415E, #71a3db);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    right: -200px;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.95);
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    transition: 0.4s ease-in-out;
+}
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.side-menu a:hover {
+    background: #555;
+    color: #218ec0;
+}
+.side-menu.open {
+    right: 0;
+}
+
+/* Sections */
+.section {
+    padding: 50px 20px;
+}
+
+/* Main About Me Heading */
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #00bcd4;   /* teal */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Subheadings under About (Achievements, Hobbies) */
+.about h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #6fb5c1;   /* orange */
+}
+
+
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-text {
+    flex: 1;
+    min-width: 250px;
+}
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.home-image img {
+    max-width: 250px;
+    border-radius: 10px;
+}
+.home img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+/* Skills */
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#skills ul li {
+  background: #798e94;   /* dark card */
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(49, 199, 219, 0.6); /* teal glow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-weight: 500;
+}
+
+.skills li {
+    background: #86b5e1;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+#skills ul li:hover {
+  background: #00bcd4;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.6); /* stronger glow */
+}
+/* .skills li:hover {
+    background: cyan;
+    color: black;
+} */
+/* Main About Me Heading */
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #00bcd4;   /* teal */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Subheadings under About (Achievements, Hobbies) */
+.about h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #86c6e1;   /* orange */
+}
+
+
+#follow{
+  text-align: center;
+  padding: 50px 20px;
+}
+.contact-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #222;
+  color: #fff;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-icons a:hover {
+  box-shadow: 0 0 15px #fff;
+  transform: scale(1.1);
+  color: #218ec0;
+}
+
+#contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-details p {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #ddd;
+}
+
+.contact-details i {
+  margin-right: 10px;
+  color: #3e6ed6; /* highlight icons */
+}
+/* 🌍 Default styles are for laptop/desktop (≥1025px) */
+
+/* 📱 Mobile (up to 600px) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .home {
+    flex-direction: column;  /* stack text and image */
+    text-align: center;
+  }
+
+  .home img {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 18px;
+  }
+
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 📱📲 Tablet (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .home {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .home img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #skills ul {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* 🌍 Default styles are for laptop/desktop (≥1025px) */
+
+/* 📱 Mobile (up to 600px) */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .home {
+    flex-direction: column;  /* stack text and image */
+    text-align: center;
+  }
+
+  .home img {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 18px;
+  }
+
+  #skills ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 📱📲 Tablet (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  .home {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .home img {
+    width: 200px;
+    height: 200px;
+  }
+
+  #skills ul {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* 💻 Laptop & Desktop (≥1025px) */
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+
+  .home {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .home img {
+    width: 250px;
+    height: 250px;
+  }
+
+  #skills ul {
+    gap: 15px;
+  }
+}

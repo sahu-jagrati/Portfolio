@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagrati Sahu - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="favi.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6dcf0f9a42.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+
+    <!-- Side Menu -->
+    <nav id="sideMenu" class="side-menu">
+        <a href="#home"><i class="fas fa-home"></i> Home</a>
+        <a href="#about"><i class="fas fa-user"></i> About</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="home-text">
+             <h1>Hii, I'm <span>Jagrati Sahu</span></h1>
+      <h3>Mathematics & Computing, BIT Mesra</h3>
+      <p>Beginner in DSA | Frontened Developer | Event Head - Fine Arts Society</p>
+
+        </div>
+        <div class="home-image">
+            <img src="jags.jpg" alt="Jagrati Sahu">
+        </div>
+    </section>
+
+   <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>I am a passionate coder and aspiring web developer, currently pursuing a degree in Mathematics and Computing at BIT Mesra.
+I have experience in C++, Java, and C, with beginner-level knowledge of Data Structures & Algorithms. I am also learning to create responsive websites using HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap.
+Beyond coding, I enjoy drawing and currently serve as an Event Head in the Fine Arts Society.</p>
+        
+<section id="skills">
+        <h3>Skills</h3>
+        <ul class="skills">
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+        </ul>
+</section>
+
+        <h3>Achievements</h3>
+        <p>Event Head - Fine Arts Society, BIT Mesra.</p>
+
+        <h3>Hobbies</h3>
+        <p>Drawing, Coding, Exploring new technologies.</p>
+    </section>
+
+   <!-- Follow Me Section -->
+<section id="follow">
+  <h2>Follow Me</h2>
+  <div class="contact-icons">
+    <a href="https://www.linkedin.com/in/jagrati-sahu" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/_sahu_jagrati" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/jagrati.sahu" target="_blank"><i class="fab fa-facebook"></i></a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact </h2>
+  <div class="contact-details">
+    <p><i class="fas fa-envelope"></i> jagratisahu2005@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +91-9151793302</p>
+  </div>
+</section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sideMenu").classList.toggle("open");
+        }
+    </script>
+
+</body>
+</html>
