@@ -201,6 +201,7 @@ body {
   margin-right: 10px;
   color: #3e6ed6; /* highlight icons */
 }
+
 /* 🌍 Default styles are for laptop/desktop (≥1025px) */
 
 /* 📱 Mobile (up to 600px) */
@@ -230,58 +231,6 @@ body {
     flex-wrap: wrap;       /* allow wrapping if not enough space */
     justify-content: center;
     gap: 10px;             /* spacing between items */
-  }
-}
-
-/* 📱📲 Tablet (601px to 1024px) */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-
-  .home {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .home img {
-    width: 200px;
-    height: 200px;
-  }
-
-  #skills ul {
-    justify-content: center;
-    gap: 10px;
-  }
-}
-
-/* 🌍 Default styles are for laptop/desktop (≥1025px) */
-
-/* 📱 Mobile (up to 600px) */
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-
-  .home {
-    flex-direction: column;  /* stack text and image */
-    text-align: center;
-  }
-
-  .home img {
-    width: 150px;
-    height: 150px;
-    margin-top: 15px;
-  }
-
-  .hamburger {
-    width: 25px;
-    height: 18px;
-  }
-
-  #skills ul {
-    flex-direction: column;
-    align-items: center;
   }
 }
 
