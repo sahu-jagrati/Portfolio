@@ -226,8 +226,10 @@ body {
   }
 
   #skills ul {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;   /* keep row wise */
+    flex-wrap: wrap;       /* allow wrapping if not enough space */
+    justify-content: center;
+    gap: 10px;             /* spacing between items */
   }
 }
 
